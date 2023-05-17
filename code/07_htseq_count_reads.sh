@@ -13,16 +13,12 @@ module load bioinfo-tools
 module load htseq
 
 # SET FILE
-in_folder="/proj/genomeanalysis2023/nobackup/work/samuraii/06_mapping_reads"
+in_folder="/proj/genomeanalysis2023/nobackup/work/samuraii/06_bwa_output/"
 annotation_file="/home/samuraii/genome-analysis-vt23/analyses/03_structural_annotation/annotation_prokka.gff"
-out_folder="/home/samuraii/genome-analysis-vt23/analyses/07_count_mapped_reads"
+out_folder="/home/samuraii/genome-analysis-vt23/analyses/07_count_mapped_reads/"
 
 # ITERATE OVER THE SORTED BAM FILES
-for sorted_bam_file in $in_folder/ERR2036629*.sorted.bam $in_folder/ERR203663*.sorted.bam; do
-  # EXTRACT THE FILENAME WITHOUT EXTENSIONS
-  filename=$(basename "$sorted_bam_file" .sorted.bam)
-
+for sorted_bam_file in ERR2036629 ERR2036630 ERR2036631 ERR2036632 ERR2036633; do
   # PERFORM READ COUNTING
-  htseq-count -f bam -r pos -s no -t exon -i gene_id "$sorted_bam_file" "$annotation_file" > "$out_folder/${filename}.counts.txt"
+  htseq-count -f bam -r pos -s reverse -t CDS -i ID $in_folder${sorted_bam_file}_bwa_sorted.bam $annotation_file > $out_folder${sorted_bam_file}.txt
 done
-
