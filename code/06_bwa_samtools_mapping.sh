@@ -11,7 +11,7 @@
 # LOAD MODULES
 module load bioinfo-tools
 module load bwa
-module load samtools 
+module load samtools
 
 # SET FILES
 canu_in_file="/home/samuraii/genome-analysis-vt23/analyses/01_genome_assembly/assembly_canu.contigs.fasta"
@@ -32,4 +32,5 @@ for read_file in $reads_folder/*.fastq.gz; do
   # INDEX THE SORTED BAM FILE
   samtools index "$out_folder/${filename}.sorted.bam"
 done
+
 
