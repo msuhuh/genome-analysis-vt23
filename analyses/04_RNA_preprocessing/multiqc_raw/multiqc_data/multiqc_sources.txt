@@ -1,0 +1,11 @@
+Module	Section	Sample Name	Source
+FastQC	all_sections	ERR2036629_1	/home/samuraii/genome-analysis-vt23/analyses/04_RNA_preprocessing/fastqc_raw/ERR2036629_1_fastqc.zip
+FastQC	all_sections	ERR2036629_2	/home/samuraii/genome-analysis-vt23/analyses/04_RNA_preprocessing/fastqc_raw/ERR2036629_2_fastqc.zip
+FastQC	all_sections	ERR2036630_1	/home/samuraii/genome-analysis-vt23/analyses/04_RNA_preprocessing/fastqc_raw/ERR2036630_1_fastqc.zip
+FastQC	all_sections	ERR2036630_2	/home/samuraii/genome-analysis-vt23/analyses/04_RNA_preprocessing/fastqc_raw/ERR2036630_2_fastqc.zip
+FastQC	all_sections	ERR2036631_1	/home/samuraii/genome-analysis-vt23/analyses/04_RNA_preprocessing/fastqc_raw/ERR2036631_1_fastqc.zip
+FastQC	all_sections	ERR2036631_2	/home/samuraii/genome-analysis-vt23/analyses/04_RNA_preprocessing/fastqc_raw/ERR2036631_2_fastqc.zip
+FastQC	all_sections	ERR2036632_1	/home/samuraii/genome-analysis-vt23/analyses/04_RNA_preprocessing/fastqc_raw/ERR2036632_1_fastqc.zip
+FastQC	all_sections	ERR2036632_2	/home/samuraii/genome-analysis-vt23/analyses/04_RNA_preprocessing/fastqc_raw/ERR2036632_2_fastqc.zip
+FastQC	all_sections	ERR2036633_1	/home/samuraii/genome-analysis-vt23/analyses/04_RNA_preprocessing/fastqc_raw/ERR2036633_1_fastqc.zip
+FastQC	all_sections	ERR2036633_2	/home/samuraii/genome-analysis-vt23/analyses/04_RNA_preprocessing/fastqc_raw/ERR2036633_2_fastqc.zip
