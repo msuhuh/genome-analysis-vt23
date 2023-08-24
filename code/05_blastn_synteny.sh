@@ -14,8 +14,8 @@ module load blast
 
 # SET FILES
 canu_in_file="/home/samuraii/genome-analysis-vt23/analyses/01_genome_assembly/assembly_canu.contigs.fasta"
-ref_in_file="/home/samuraii/genome-analysis-vt23/data/ml04_ref.fasta"
+ref_in_file="/home/samuraii/genome-analysis-vt23/data/ref_genome_files/ncbi-genomes-2023-05-16/GCF_000299235.1_ASM29923v1_genomic.fna"
 out_folder="/home/samuraii/genome-analysis-vt23/analyses/05_synteny_comparison"
 
 # RUN BLASTN
-blastn -query $canu_in_file -subject $ref_in_file -outfmt 6 -out $out_folder/blastn.txt
+blastn -query $canu_in_file -subject $ref_in_file -outfmt 6 -out $out_folder/blastn_comparison.txt
